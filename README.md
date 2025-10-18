@@ -48,15 +48,13 @@ No complex setup is required. Simply follow these steps:
     ```bash
     git clone [https://github.com/Vachilla64/HNG-Stage0.git](https://github.com/Vachilla64/HNG-Stage0.git)
     ```
-2.  **Navigate into the project directory:**
+2.  **Find the project directory:**
     ```bash
     cd HNG-Stage0
     ```
-3.  **Open the file:**
+    or just Navigate there in your file explorer
+    
+4.  **Open the file:**
     Open the `index.html` file in your web browser.
 
 ---
-### Repository
-
-You can find the source code here:
-**[https://github.com/Vachilla64/HNG-Stage0.git](https://github.com/Vachilla64/HNG-Stage0.git)**
