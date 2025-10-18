@@ -1,0 +1,173 @@
+
+/* Basic Reset & Font Setup */
+body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* focus style for accessibility */
+:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+    border-radius: 0.375rem;
+}
+
+/* --- Profile Card Styles --- */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 56rem; 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.01);
+}
+
+.card-content {
+    /* desktop layout is in the media query */
+}
+
+/* Sidebar (Avatar & Socials) */
+.card-sidebar {
+    background-color: #f9fafb;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    height: 8rem;
+    width: 8rem; 
+    border-radius: 9999px;
+    object-fit: cover;
+    box-shadow: 2rem;
+}
+
+.card-sidebar figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+.socials-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #6b7280;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #4f46e5;
+}
+
+.social-links svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Main Content Area */
+.card-main {
+    padding: 2rem;
+}
+
+.card-main header h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-main header p {
+    margin-top: 0.5rem;
+    color: #4b5563;
+}
+
+.details-grid {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.details-grid section h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.details-grid section ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 0.5rem;
+    color: #4b5563;
+}
+
+.card-main footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.time-display {
+    font-family: monospace;
+    background-color: #f3f4f6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* --- Responsive Layout --- */
+@media (min-width: 768px) {
+    .card-content {
+        display: flex;
+    }
+
+    .card-sidebar {
+        width: 33.3333%;
+    }
+
+    .avatar {
+        height: 10rem;
+	width: 10rem;     }
+
+    .card-main {
+        flex: 1;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card-main footer {
+        text-align: right;
+    }
+}

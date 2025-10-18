@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- the neccesities :) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG Stage 0: Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Profile Card Root Container -->
+    <article data-testid="test-profile-card" class="profile-card">
+        <div class="card-content">
+            <!-- Left Side: Avatar and Social Links -->
+            <aside class="card-sidebar">
+                <figure>
+                    <!-- Avatar Image -->
+                    <img data-testid="test-user-avatar" class="avatar" src="./assets/myphoto.jpg" alt="My profile photo">
+                    <figcaption>Alfred Valentine</figcaption>
+                </figure>
+                <!-- Social Linjs -->
+                <nav aria-label="Social media links">
+                    <ul data-testid="test-user-social-links" class="social-links">
+                        <li>
+                            <a href="https://github.com/Vachilla64" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="GitHub Profile">
+				<img src="./assets/github-mark.svg" alt="Github" class="socials-icon" />
+                            </a>
+                        </li>
+							<!--
+                        <li>
+                            <a href="https://x.com/i-dont-have-an-accout" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Twitter Profile">
+				<img src="./assets/icons8-x.svg" alt="Github" class="socials-icon" />
+                            </a>
+                        </li>
+							-->
+                        <li>
+                            <a href="https://www.linkedin.com/in/alfred-valentine/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Twitter Profile">
+				<img src="./assets/icons8-linkedin.svg" alt="Github" class="socials-icon" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Right Side: Content -->
+            <main class="card-main">
+                <header>
+                    <!-- Name -->
+                    <h2 data-testid="test-user-name">Alfred Valentine</h2>
+                    <!-- Short Biography -->
+                    <p data-testid="test-user-bio">A HNG intern, Website and Web Game Developer</p>
+                </header>
+
+		<!-- Hobbies and Dislikes -->
+                <div class="details-grid">
+                    <section aria-labelledby="hobbies-heading">
+                        <h3 id="hobbies-heading">Hobbies</h3>
+                        <ul data-testid="test-user-hobbies">
+                            <li>Creating Web Games</li>
+                            <li>Creating Music</li>
+                            <li>Consuing Sharwama</li>
+                            <li>Practicing Japanese</li>
+                        </ul>
+                    </section>
+                    <section aria-labelleby="dislikes-heading">
+                        <h3 id="dislikes-heading">Dislikes</h3>
+                        <ul data-testid="test-user-dislikes">
+                            <li>Excessive Errands</li>
+                            <li>Computer Freezing up</li>
+                            <li>VScode</li>
+                            <li>A runny nose</li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- Current Time (in millliseconds) -->
+                <footer>
+                    <p>
+                        Current Time (in ms): 
+                        <span data-testid="test-user-time" class="time-display"></span>
+                    </p>
+                </footer>
+            </main>
+        </div>
+    </article>
+
+</body>
+</html>
+
