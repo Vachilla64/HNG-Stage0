@@ -9,7 +9,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Profile Card Root Container -->
+ <header>
+    <nav data-testid="main-navigation">
+        <a href="index.html">Profile Card</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+    </nav>
+</header>  
+	<main>
+
+		<!-- Profile Card Root Container -->
     <article data-testid="test-profile-card" class="profile-card">
         <div class="card-content">
             <!-- Left Side: Avatar and Social Links -->
@@ -45,12 +54,12 @@
 
             <!-- Right Side: Content -->
             <main class="card-main">
-                <header>
+                <h1>
                     <!-- Name -->
                     <h2 data-testid="test-user-name">Alfred Valentine</h2>
                     <!-- Short Biography -->
                     <p data-testid="test-user-bio">A HNG intern, Website and Web Game Developer</p>
-                </header>
+                </h1>
 
 		<!-- Hobbies and Dislikes -->
                 <div class="details-grid">
@@ -83,6 +92,7 @@
             </main>
         </div>
     </article>
+	</main>
 
 </body>
 </html>
