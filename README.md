@@ -2,6 +2,34 @@
 
 This project is a submission for the **HNG Internship Stage 0 Frontend Task**. It features a fully responsive, accessible, and testable personal profile card built using only **plain HTML, CSS, and vanilla JavaScript**, adhering to modern web standards.
 
+
+## Stage 1 Acceptance Criteria
+
+The following criteria must be met to ensure the successful completion of the project:
+
+### Contact Us Page
+
+* All required fields must exist and utilize the correct **`data-testid`** attributes for automated testing.
+* **Validation** logic must be implemented to prevent invalid submissions (e.g., incorrect email format, missing required fields).
+* The submission **success message** must only be shown after a valid form submission is processed.
+
+### About Me Page
+
+* All required content sections (e.g., Biography, Skills, Experience) must exist.
+* The required sections must use the correct **`data-testid`** attributes.
+* **Semantic HTML** must be used correctly throughout the page (e.g., `<main>`, `<section>`, `<ul>`, `<p>`, `<h2>`).
+
+### General Requirements
+
+* **Semantic HTML:** Use appropriate semantic HTML elements throughout the entire codebase.
+* **Accessibility (A11y):** Ensure the application is fully accessible, including proper use of `<label>` elements, `alt` text for images, and ARIA associations where necessary.
+* **Responsiveness:** The layout must be **fully responsive** and optimized across all viewports (mobile, tablet, desktop).
+* **Keyboard Navigability:** All interactive elements must be accessible and operable using only the keyboard.
+* **Code Quality:** The codebase must be modular, readable, and consistent in style and structure.
+
+
+
+
 ### Features
 
 -   **Semantic HTML**: The structure utilizes semantic tags (`<article>`, `<nav>`, `<section>`, etc.) for improved **accessibility** and Search Engine Optimization (**SEO**).
